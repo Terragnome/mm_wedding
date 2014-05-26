@@ -6,6 +6,6 @@ class ApplicationController < ActionController::Base
   before_filter :set_constants
 
   def set_constants
-    @app_title_components='Melanie+Michael'
+    @app_title='Melanie+Michael'
   end
 end
