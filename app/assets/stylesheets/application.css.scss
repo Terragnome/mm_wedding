@@ -38,13 +38,15 @@ a{
 }
 
 h1{
-	background-color: #484848;
+	//background-color: #484848;
 	border: 0px;
-	color: #ffffff;
+	border-bottom: 1px solid #808080;
+	color: #484848;
 	font-family: 'Rosario';
-	font-size: 16px;
+	font-size: 18px;
+	font-weight: normal;
 	margin: 0px;
-	padding: 5px 10px 5px 10px;
+	padding: 5px 0px 5px 0px;
 }
 
 img{
