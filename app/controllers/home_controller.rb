@@ -1,5 +1,5 @@
 class HomeController < ApplicationController
-  def index
+  def home
   end
   
   def about
@@ -9,11 +9,5 @@ class HomeController < ApplicationController
   end
   
   def rsvp
-  end
-  
-  def registry
-  end
-  
-  def contact
   end
 end

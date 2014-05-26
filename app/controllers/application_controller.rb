@@ -7,5 +7,8 @@ class ApplicationController < ActionController::Base
 
   def set_constants
     @app_title='Melanie+Michael'
+    @asset_root=''
+    @email='m.and.m.wedding.adventure@gmail.com'
+    @registry_url='http://www.google.com'
   end
 end

@@ -1,0 +1,119 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+$header_width: 750px;
+
+@font-face{
+	font-family: 'Lato';
+	src: url('/fonts/lato/Lato-Reg.ttf');
+}
+
+@font-face{
+	font-family: 'Rosario';
+	src: url('/fonts/rosario/Rosario-Regular.otf');
+}
+
+a{
+	color: #808080;
+	cursor: pointer;
+	font-family: 'Rosario';
+	text-decoration: none;
+	&:hover{
+		color: #000000;
+	}		
+}
+
+h1{
+	background-color: #484848;
+	border: 0px;
+	color: #ffffff;
+	font-family: 'Rosario';
+	font-size: 18px;
+	margin: 0px;
+	padding: 5px 10px 5px 10px;
+}
+
+p{
+	color: #484848;
+	font-family: 'Lato';
+	text-align: left;
+}
+
+div{
+	border: 0px;
+	cursor: default;
+	margin: 0px;
+	padding: 0px;
+}
+
+html, body{
+	background-repeat: no-repeat;
+	background-size: cover;
+	border: 0px;
+	height: 100%;
+	margin: 0px;
+	min-width: #{$header_width};
+	padding: 0px;
+	width: 100%;
+
+	::selection{
+		background-color: #0099cc;
+		color: #ffffff;
+	}
+	::-moz-selection{
+		background-color: #0099cc;
+		color: #ffffff;
+	}
+}
+
+.section{
+	margin: 0px 0px 50px 0px;
+}
+
+#header{
+	text-align: center;
+	padding: 30px 0px 30px 0px;
+	a{
+		font-size: 16px;
+		font-weight: bold;
+		margin: 30px;
+	}
+}
+
+#scene{
+	width: #{$header_width};
+	margin: 0px auto;
+	padding: 0px 0px 60px 0px;
+}
+
+#about{
+	img{
+		width: 100%;
+	}
+}
+
+#home{
+	img{
+		width: 100%;
+	}
+}
+
+#info{
+}
+
+#rsvp{
+
+}

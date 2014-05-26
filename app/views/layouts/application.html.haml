@@ -7,10 +7,12 @@
     =javascript_include_tag "application", "data-turbolinks-track"=>true
     =csrf_meta_tags
   %body
-    .navigation
-      =link_to("Melanie+Michael")
-      =link_to("Info")
-      =link_to("RSVP")
-      =link_to("Registry")
-      =link_to("Contact")
-    =yield
+    #header
+      =link_to('HOME', home_url)
+      =link_to('MELANIE+MICHAEL', about_url)
+      =link_to('INFO', info_url)
+      =link_to('RSVP', rsvp_url)
+      =link_to('REGISTRY', @registry_url)
+      =mail_to(@email, 'CONTACT') 
+    #scene
+      =yield
