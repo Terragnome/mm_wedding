@@ -14,7 +14,7 @@
  *= require_self
  */
 
-$page_width: 750px;
+$page_width: 775px;
 $min_page_width: #{$page_width};
 
 @font-face{
@@ -45,6 +45,10 @@ h1{
 	font-size: 18px;
 	margin: 0px;
 	padding: 5px 10px 5px 10px;
+}
+
+img{
+	border: 0px;
 }
 
 p{
@@ -78,11 +82,11 @@ html, body{
 	width: 100%;
 
 	::selection{
-		background-color: #0099cc;
+		background-color: #9272cc;
 		color: #ffffff;
 	}
 	::-moz-selection{
-		background-color: #0099cc;
+		background-color: #9272cc;
 		color: #ffffff;
 	}
 }
@@ -120,11 +124,16 @@ html, body{
 	a{
 		font-size: 16px;
 		font-weight: bold;
-		margin: 30px;
+	}
+
+	.spacer{
+		width: 59px;
 	}
 
 	.selected{
 		color: #9272cc;
+		cursor: default;
+		pointer-events: none;
 	}
 }
 

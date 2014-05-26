@@ -1,0 +1,206 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+@font-face {
+  font-family: 'Lato';
+  src: url("/fonts/lato/Lato-Reg.ttf");
+}
+
+@font-face {
+  font-family: 'Rosario';
+  src: url("/fonts/rosario/Rosario-Regular.otf");
+}
+
+/* line 31, /Users/mhuailin/Projects/mm_wedding/app/assets/stylesheets/application.css.scss */
+a {
+  color: #808080;
+  cursor: pointer;
+  font-family: 'Rosario';
+  text-decoration: none;
+}
+/* line 36, /Users/mhuailin/Projects/mm_wedding/app/assets/stylesheets/application.css.scss */
+a:hover {
+  color: #000000;
+}
+
+/* line 41, /Users/mhuailin/Projects/mm_wedding/app/assets/stylesheets/application.css.scss */
+h1 {
+  background-color: #484848;
+  border: 0px;
+  color: #ffffff;
+  font-family: 'Rosario';
+  font-size: 18px;
+  margin: 0px;
+  padding: 5px 10px 5px 10px;
+}
+
+/* line 51, /Users/mhuailin/Projects/mm_wedding/app/assets/stylesheets/application.css.scss */
+img {
+  border: 0px;
+}
+
+/* line 55, /Users/mhuailin/Projects/mm_wedding/app/assets/stylesheets/application.css.scss */
+p {
+  color: #484848;
+  font-family: 'Lato';
+  font-size: 16px;
+  text-align: left;
+}
+/* line 61, /Users/mhuailin/Projects/mm_wedding/app/assets/stylesheets/application.css.scss */
+p .title {
+  color: #9272cc;
+  font-size: 18px;
+}
+
+/* line 67, /Users/mhuailin/Projects/mm_wedding/app/assets/stylesheets/application.css.scss */
+div {
+  border: 0px;
+  cursor: default;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* line 74, /Users/mhuailin/Projects/mm_wedding/app/assets/stylesheets/application.css.scss */
+html, body {
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 0px;
+  height: 100%;
+  margin: 0px;
+  width: 775px;
+  min-width: 775px;
+  padding: 0px;
+  width: 100%;
+}
+/* line 85, /Users/mhuailin/Projects/mm_wedding/app/assets/stylesheets/application.css.scss */
+html ::selection, body ::selection {
+  background-color: #9272cc;
+  color: #ffffff;
+}
+/* line 89, /Users/mhuailin/Projects/mm_wedding/app/assets/stylesheets/application.css.scss */
+html ::-moz-selection, body ::-moz-selection {
+  background-color: #9272cc;
+  color: #ffffff;
+}
+
+/* line 95, /Users/mhuailin/Projects/mm_wedding/app/assets/stylesheets/application.css.scss */
+.gray {
+  color: #808080;
+}
+
+/* line 96, /Users/mhuailin/Projects/mm_wedding/app/assets/stylesheets/application.css.scss */
+.darkgray {
+  color: #484848;
+}
+
+/* line 97, /Users/mhuailin/Projects/mm_wedding/app/assets/stylesheets/application.css.scss */
+.purple {
+  color: #9272cc;
+}
+
+/* line 99, /Users/mhuailin/Projects/mm_wedding/app/assets/stylesheets/application.css.scss */
+.left {
+  float: left;
+}
+
+/* line 100, /Users/mhuailin/Projects/mm_wedding/app/assets/stylesheets/application.css.scss */
+.right {
+  float: right;
+}
+
+/* line 101, /Users/mhuailin/Projects/mm_wedding/app/assets/stylesheets/application.css.scss */
+.bold {
+  font-weight: bold;
+}
+
+/* line 102, /Users/mhuailin/Projects/mm_wedding/app/assets/stylesheets/application.css.scss */
+.inline {
+  display: inline-block;
+}
+
+/* line 104, /Users/mhuailin/Projects/mm_wedding/app/assets/stylesheets/application.css.scss */
+.clearfix {
+  display: inline-block;
+}
+
+/* line 105, /Users/mhuailin/Projects/mm_wedding/app/assets/stylesheets/application.css.scss */
+.clearfix:after {
+  clear: both;
+  content: " ";
+  display: block;
+  font-size: 0;
+  height: 0;
+  visibility: hidden;
+}
+
+/* line 114, /Users/mhuailin/Projects/mm_wedding/app/assets/stylesheets/application.css.scss */
+.indent {
+  text-indent: 20px;
+}
+
+/* line 118, /Users/mhuailin/Projects/mm_wedding/app/assets/stylesheets/application.css.scss */
+.section {
+  margin: 0px 0px 50px 0px;
+}
+
+/* line 122, /Users/mhuailin/Projects/mm_wedding/app/assets/stylesheets/application.css.scss */
+#header {
+  text-align: center;
+  padding: 30px 0px 30px 0px;
+}
+/* line 125, /Users/mhuailin/Projects/mm_wedding/app/assets/stylesheets/application.css.scss */
+#header a {
+  font-size: 16px;
+  font-weight: bold;
+}
+/* line 130, /Users/mhuailin/Projects/mm_wedding/app/assets/stylesheets/application.css.scss */
+#header .spacer {
+  width: 59px;
+}
+/* line 134, /Users/mhuailin/Projects/mm_wedding/app/assets/stylesheets/application.css.scss */
+#header .selected {
+  color: #9272cc;
+  cursor: default;
+  pointer-events: none;
+}
+
+/* line 141, /Users/mhuailin/Projects/mm_wedding/app/assets/stylesheets/application.css.scss */
+#scene {
+  width: 775px;
+  min-width: 775px;
+  margin: 0px auto;
+  padding: 0px 0px 60px 0px;
+}
+
+/* line 149, /Users/mhuailin/Projects/mm_wedding/app/assets/stylesheets/application.css.scss */
+#about .michaelanie {
+  width: 100%;
+}
+/* line 153, /Users/mhuailin/Projects/mm_wedding/app/assets/stylesheets/application.css.scss */
+#about .gallery {
+  text-align: center;
+}
+/* line 155, /Users/mhuailin/Projects/mm_wedding/app/assets/stylesheets/application.css.scss */
+#about .gallery img {
+  display: inline-block;
+  height: 350px;
+  border: 0px;
+  margin: 0px;
+}
+
+/* line 165, /Users/mhuailin/Projects/mm_wedding/app/assets/stylesheets/application.css.scss */
+#home img {
+  width: 100%;
+}

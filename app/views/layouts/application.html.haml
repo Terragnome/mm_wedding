@@ -9,10 +9,15 @@
   %body
     #header
       =link_to('HOME', home_url, :class=>is_tab_selected?('home'))
+      .inline.spacer
       =link_to('MELANIE+MICHAEL', about_url, :class=>is_tab_selected?('about'))
+      .inline.spacer
       =link_to('INFO', info_url, :class=>is_tab_selected?('info'))
+      .inline.spacer
       =link_to('RSVP', rsvp_url, :class=>is_tab_selected?('rsvp'))
+      .inline.spacer
       =link_to('REGISTRY', @registry_url)
+      .inline.spacer
       =mail_to(@email, 'CONTACT') 
     #scene
       =yield
