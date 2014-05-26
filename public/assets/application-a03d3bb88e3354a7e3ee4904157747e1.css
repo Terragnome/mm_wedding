@@ -41,7 +41,7 @@ h1 {
   border: 0px;
   color: #ffffff;
   font-family: 'Rosario';
-  font-size: 18px;
+  font-size: 16px;
   margin: 0px;
   padding: 5px 10px 5px 10px;
 }
@@ -79,8 +79,8 @@ html, body {
   border: 0px;
   height: 100%;
   margin: 0px;
-  width: 775px;
-  min-width: 775px;
+  width: 768px;
+  min-width: 768px;
   padding: 0px;
   width: 100%;
 }
@@ -158,16 +158,16 @@ html ::-moz-selection, body ::-moz-selection {
 /* line 122, /Users/mhuailin/Projects/mm_wedding/app/assets/stylesheets/application.css.scss */
 #header {
   text-align: center;
-  padding: 30px 0px 30px 0px;
+  padding: 40px 0px 40px 0px;
 }
 /* line 125, /Users/mhuailin/Projects/mm_wedding/app/assets/stylesheets/application.css.scss */
 #header a {
-  font-size: 16px;
-  font-weight: bold;
+  font-size: 18px;
+  font-weight: normal;
 }
 /* line 130, /Users/mhuailin/Projects/mm_wedding/app/assets/stylesheets/application.css.scss */
 #header .spacer {
-  width: 59px;
+  width: 54px;
 }
 /* line 134, /Users/mhuailin/Projects/mm_wedding/app/assets/stylesheets/application.css.scss */
 #header .selected {
@@ -178,8 +178,8 @@ html ::-moz-selection, body ::-moz-selection {
 
 /* line 141, /Users/mhuailin/Projects/mm_wedding/app/assets/stylesheets/application.css.scss */
 #scene {
-  width: 775px;
-  min-width: 775px;
+  width: 768px;
+  min-width: 768px;
   margin: 0px auto;
   padding: 0px 0px 60px 0px;
 }

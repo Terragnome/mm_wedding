@@ -14,7 +14,7 @@
  *= require_self
  */
 
-$page_width: 775px;
+$page_width: 768px;
 $min_page_width: #{$page_width};
 
 @font-face{
@@ -127,7 +127,7 @@ html, body{
 	}
 
 	.spacer{
-		width: 55px;
+		width: 54px;
 	}
 
 	.selected{
