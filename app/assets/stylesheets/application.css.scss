@@ -14,7 +14,8 @@
  *= require_self
  */
 
-$header_width: 750px;
+$page_width: 750px;
+$min_page_width: #{$page_width};
 
 @font-face{
 	font-family: 'Lato';
@@ -49,7 +50,13 @@ h1{
 p{
 	color: #484848;
 	font-family: 'Lato';
+	font-size: 16px;
 	text-align: left;
+	
+	.title{
+		color: #9272cc;
+		font-size: 18px;
+	}
 }
 
 div{
@@ -65,7 +72,8 @@ html, body{
 	border: 0px;
 	height: 100%;
 	margin: 0px;
-	min-width: #{$header_width};
+	width: #{$min_page_width};
+	min-width: #{$page_width};
 	padding: 0px;
 	width: 100%;
 
@@ -77,6 +85,29 @@ html, body{
 		background-color: #0099cc;
 		color: #ffffff;
 	}
+}
+
+.gray{color: #808080;}
+.darkgray{color: #484848;}
+.purple{color: #9272cc;}
+
+.left{ float: left; }
+.right{ float: right }
+.bold{ font-weight: bold; }
+.inline{ display: inline-block; }
+
+.clearfix{ display: inline-block; }
+.clearfix:after{
+    clear: both;
+    content: " ";
+    display: block;
+    font-size: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+.indent{
+	text-indent: 20px;
 }
 
 .section{
@@ -94,14 +125,25 @@ html, body{
 }
 
 #scene{
-	width: #{$header_width};
+	width: #{$page_width};
+	min-width: #{$min_page_width};
 	margin: 0px auto;
 	padding: 0px 0px 60px 0px;
 }
 
 #about{
-	img{
+	.michaelanie{
 		width: 100%;
+	}
+	
+	.gallery{
+		text-align: center;
+		img{
+			display: inline-block;
+			height: 350px;
+			border: 0px;
+			margin: 0px;
+		}
 	}
 }
 
