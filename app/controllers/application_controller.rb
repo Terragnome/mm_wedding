@@ -9,6 +9,6 @@ class ApplicationController < ActionController::Base
     @app_title='Melanie+Michael'
     @asset_root=''
     @email='wedding@melanieandmichael.us'
-    @registry_url='http://www.crateandbarrel.com/gift-registry/'
+    @registry_url='http://www.crateandbarrel.com/Gift-Registry/Michael-Lin-and-Melanie-So/r5198518'
   end
 end
