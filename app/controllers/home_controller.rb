@@ -10,4 +10,10 @@ class HomeController < ApplicationController
   
   def rsvp
   end
+
+  def registry
+  end
+
+  def contact
+  end
 end
