@@ -4,59 +4,63 @@
       RSVP
     %p
       ="Please submit your RSVP information using the form below"
-      =form_tag do
-        .area
-          =label_tag :name, "NAME"
-          %div
-            =text_field_tag :name, "", :size=>148, :maxlength=>148
-        .area
-          =label_tag :email, "EMAIL"
-          %div
-            =text_field_tag :email, "", :size=>148, :maxlength=>148
-        .entrees.area.clearfix
-          =label_tag :entree, "ENTREE"
-          .clearfix
-            .choice{:class=>"unselected"}
-              .title
-                ="RIB-EYE STEAK"
-              .description
-                ="Seared rib-eye steak with red wine butter"
-              .checkbox
-                =radio_button_tag :entree, "steak"
-            .choice{:class=>"unselected"}
-              .title
-                ="BOURSIN CHICKEN"
-              .description
-                ="Pan roasted chicken breast with a Boursin cheese and truffle oil sauce"
-              .checkbox
-                =radio_button_tag :entree, "chicken"
-            .choice{:class=>"unselected"}
-              .title
-                ="VEGETABLE ENCROUTE"
-              .description
-                "Flaky pastry filled with grilled vegetables with red pepper coulis"
-              .checkbox
-                =radio_button_tag :entree, "vegetarian"
-        .shuttle.area.clearfix
-          =label_tag :shuttle, "SHUTTLE"
-          %p
-            ="There will be a shuttle departing from the Hilton Garden Inn in Cupertino at XX.  The shuttle will leave Cinnabar Hills at XX and arrive at the hotel at XX.  Will you be using the shuttle?"
+    %p.errors
+      -@rsvp.errors.full_messages.each do |message|
+        ="-#{message}"
+        %br
+    =form_for @rsvp do |f|
+      .area
+        =f.label :name, "NAME"
+        %div
+          =f.text_field :name, :size=>148, :maxlength=>148
+      .area
+        =f.label :email, "EMAIL"
+        %div
+          =f.text_field :email, :size=>148, :maxlength=>148
+      .entrees.area.clearfix
+        =f.label :entree, "ENTREE"
+        .clearfix
           .choice{:class=>"unselected"}
             .title
-              ="YES"
+              ="RIB-EYE STEAK"
+            .description
+              ="Seared rib-eye steak with red wine butter"
             .checkbox
-              =radio_button_tag :shuttle, "yes"
+              =f.radio_button :entree, "steak"
           .choice{:class=>"unselected"}
             .title
-              ="NO"
+              ="BOURSIN CHICKEN"
+            .description
+              ="Pan roasted chicken breast with a Boursin cheese and truffle oil sauce"
             .checkbox
-              =radio_button_tag :shuttle, "no"
-        .other.area
-          =label_tag :other, "SPECIAL REQUESTS"
-          %p
-            ="If you have any special requests such as allergies or deitary restrictions, please let us know and we will try our best to accommodate"
-          .center
-            =text_area_tag :other, "", :size=>"108x10"
-        
-        .area
-          =submit_tag "RSVP", :class=>"submit"
+              =f.radio_button :entree, "chicken"
+          .choice{:class=>"unselected"}
+            .title
+              ="VEGETABLE ENCROUTE"
+            .description
+              "Flaky pastry filled with grilled vegetables with red pepper coulis"
+            .checkbox
+              =f.radio_button :entree, "vegetarian"
+      .shuttle.area.clearfix
+        =f.label :shuttle, "SHUTTLE"
+        %p
+          ="There will be a shuttle departing from the Hilton Garden Inn in Cupertino at XX.  The shuttle will leave Cinnabar Hills at XX and arrive at the hotel at XX.  Will you be using the shuttle?"
+        .choice{:class=>"unselected"}
+          .title
+            ="YES"
+          .checkbox
+            =f.radio_button :shuttle, true
+        .choice{:class=>"unselected"}
+          .title
+            ="NO"
+          .checkbox
+            =f.radio_button :shuttle, false
+      .other.area
+        =f.label :other, "SPECIAL REQUESTS"
+        %p
+          ="If you have any special requests such as allergies or deitary restrictions, please let us know and we will try our best to accommodate"
+        .center
+          =f.text_area :other, :size=>"108x10"
+      
+      .area
+        =f.submit "RSVP", :class=>"submit"

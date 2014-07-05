@@ -91,6 +91,7 @@ html, body{
 	}
 }
 
+.red{color: #F00000;}
 .gray{color: #808080;}
 .darkgray{color: #484848;}
 .purple{color: #9272cc;}
@@ -191,6 +192,10 @@ html, body{
 		font-family: 'Rosario';
 		font-size: 16px;
 		width: 400px;
+	}
+	.errors{
+		color: #f00000;
+		font-family: 'Lato';
 	}
 	.area{
 		margin:0 0 25px 0;

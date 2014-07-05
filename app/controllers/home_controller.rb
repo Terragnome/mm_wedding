@@ -9,23 +9,28 @@ class HomeController < ApplicationController
   end
   
   def rsvp
+    @rsvp = Rsvp.new
   end
   
   def rsvp_submit
-    @rsvp = {
-      :name => params[:name],
-      :email => params[:email],
-      :entree => params[:entree],
-      :shuttle => params[:shuttle],
-      :other => params[:other]
-    }
-    puts @rsvp
-    RsvpMailer.rsvp_email(@rsvp).deliver
+    @rsvp = Rsvp.find_by_email(rsvp_params[:email])
+    @rsvp = Rsvp.new(rsvp_params) if !@rsvp
+    if @rsvp.save
+      render :rsvp_submit
+    else
+      render :rsvp
+    end
   end
 
   def registry
   end
 
   def contact
+  end
+  
+  private
+  
+  def rsvp_params
+    params.require(:rsvp).permit(:name, :email, :entree, :shuttle, :other)
   end
 end

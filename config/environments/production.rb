@@ -78,11 +78,6 @@ Rails.application.configure do
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
 
-  config.action_mailer.raise_delivery_errors = true
-  config.action_mailer.delivery_method = :sendmail
-  config.action_mailer.perform_deliveries = true
-  config.action_mailer.default_options = {from: 'wedding@melanieandmichael.us'}
-
   #Needed to get css to appear on Heroku
   config.cache_classes = true
   config.serve_static_assets = true

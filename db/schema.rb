@@ -11,9 +11,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20140705075153) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "rsvps", force: true do |t|
+    t.string  "name",    null: false
+    t.string  "email",   null: false
+    t.string  "entree",  null: false
+    t.boolean "shuttle", null: false
+    t.string  "other"
+  end
+
+  add_index "rsvps", ["email"], name: "index_rsvps_on_email", unique: true, using: :btree
+  add_index "rsvps", ["name"], name: "index_rsvps_on_name", using: :btree
 
 end

@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   get 'registry' => 'home#registry'
   get 'contact' => 'home#contact'
   get 'rsvp' => 'home#rsvp'
-  post 'rsvp' => 'home#rsvp_submit'
+  post 'rsvps' => 'home#rsvp_submit'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
