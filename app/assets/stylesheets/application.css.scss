@@ -180,6 +180,12 @@ html, body{
 }
 
 #rsvp{
+	table{
+		td{
+			font-family: 'Lato';
+			min-width: 80px;
+		}
+	}
 	label{
 		color: #808080;
 		font-family: 'Rosario';

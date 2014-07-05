@@ -12,7 +12,15 @@ class HomeController < ApplicationController
   end
   
   def rsvp_submit
-    puts params
+    @rsvp = {
+      :name => params[:name],
+      :email => params[:email],
+      :entree => params[:entree],
+      :shuttle => params[:shuttle],
+      :other => params[:other]
+    }
+    puts @rsvp
+    RsvpMailer.rsvp_email(@rsvp).deliver
   end
 
   def registry
