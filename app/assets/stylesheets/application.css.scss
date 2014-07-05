@@ -152,11 +152,17 @@ html, body{
 	
 	.gallery{
 		text-align: center;
+		.divider{
+			width: 764px;
+			height: 508px;
+		}
 		img{
+			float:left;
 			display: inline-block;
 			height: 350px;
 			border: 0px;
 			margin: 0px;
+			padding: 2px;
 		}
 	}
 }

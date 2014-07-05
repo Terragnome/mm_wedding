@@ -9,6 +9,7 @@ class HomeController < ApplicationController
   end
   
   def rsvp
+    @rsvp={}
   end
 
   def registry
