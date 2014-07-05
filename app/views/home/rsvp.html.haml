@@ -1,15 +1,61 @@
 #rsvp
-  %h1
-    RSVP
-  %div
-    =form_tag do
-      =label_tag :name, "Name"
-      =text_field_tag :name
-      %br
-      =label_tag :email, "Email"
-      =text_field_tag :email
-      %br
-      =label_tag :entree, "Entree"
-      =text_field_tag :entree
-      %br
-      =submit_tag "Send"
+  .section
+    %h1
+      RSVP
+    %p
+      =form_tag do
+        .area
+          =label_tag :name, "NAME"
+          %div
+            =text_field_tag :name, "", :size=>148, :maxlength=>148
+        .area
+          =label_tag :email, "EMAIL"
+          %div
+            =text_field_tag :email, "", :size=>148, :maxlength=>148
+        .entrees.area.clearfix
+          =label_tag :entree, "ENTREE"
+          .clearfix
+            .choice{:class=>"unselected"}
+              .title
+                ="RIB-EYE STEAK"
+              .description
+                ="Seared rib-eye steak with red wine butter"
+              .checkbox
+                =radio_button_tag :entree, "steak"
+            .choice{:class=>"unselected"}
+              .title
+                ="BOURSIN CHICKEN"
+              .description
+                ="Pan roasted chicken breast with a Boursin cheese and truffle oil sauce"
+              .checkbox
+                =radio_button_tag :entree, "chicken"
+            .choice{:class=>"unselected"}
+              .title
+                ="VEGETABLE ENCROUTE"
+              .description
+                "Flaky pastry filled with grilled vegetables with red pepper coulis"
+              .checkbox
+                =radio_button_tag :entree, "vegetarian"
+        .shuttle.area.clearfix
+          =label_tag :shuttle, "SHUTTLE"
+          %p
+            ="There will be a shuttle departing from the Hilton Garden Inn in Cupertino at XX.  The shuttle will leave Cinnabar Hills at XX and arrive at the hotel at XX.  Will you be using the shuttle?"
+          .choice{:class=>"unselected"}
+            .title
+              ="YES"
+            .checkbox
+              =radio_button_tag :shuttle, "yes"
+          .choice{:class=>"unselected"}
+            .title
+              ="NO"
+            .checkbox
+              =radio_button_tag :shuttle, "no"
+        .other.area
+          =label_tag :other, "SPECIAL REQUESTS"
+          %p
+            ="If you have any special requests such as allergies or deitary restrictions, please let us know and we will try our best to accommodate"
+          .center
+            =text_area_tag :other, "", :size=>"108x10"
+        
+        .area
+          =submit_tag "RSVP", :class=>"submit"
