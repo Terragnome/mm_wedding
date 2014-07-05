@@ -1,0 +1,13 @@
+!!! html
+%html
+  %head
+    %meta{:content=>'text/html', :charset=>'UTF-8', 'http-equiv'=>'Content-Type'}
+  %body
+    %h1
+      ="RSVP for #{@rsvp[:name]}"
+    %p
+      ="Name:    #{@rsvp[:name]}"
+      ="Email:   #{@rsvp[:email]}"
+      ="Entree:  #{@rsvp[:entree]}"
+      ="Shuttle: #{@rsvp[:shuttle]}"
+      ="Other:   #{@rsvp[:other]}"
