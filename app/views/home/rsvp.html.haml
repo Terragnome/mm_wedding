@@ -45,16 +45,17 @@
         =f.label :shuttle, "SHUTTLE"
         %p
           ="There will be a shuttle departing from the Hilton Garden Inn in Cupertino at XX.  The shuttle will leave Cinnabar Hills at XX and arrive at the hotel at XX.  Will you be using the shuttle?"
-        .choice{:class=>"unselected"}
-          .title
-            ="YES"
-          .checkbox
-            =f.radio_button :shuttle, true
-        .choice{:class=>"unselected"}
-          .title
-            ="NO"
-          .checkbox
-            =f.radio_button :shuttle, false
+        .clearfix
+          .choice{:class=>"unselected"}
+            .title
+              ="YES"
+            .checkbox
+              =f.radio_button :shuttle, true
+          .choice{:class=>"unselected"}
+            .title
+              ="NO"
+            .checkbox
+              =f.radio_button :shuttle, false
       .other.area
         =f.label :other, "SPECIAL REQUESTS"
         %p
