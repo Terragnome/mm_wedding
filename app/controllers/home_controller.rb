@@ -9,7 +9,10 @@ class HomeController < ApplicationController
   end
   
   def rsvp
-    @rsvp={}
+  end
+  
+  def rsvp_submit
+    puts params
   end
 
   def registry
