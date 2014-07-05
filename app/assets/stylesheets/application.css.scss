@@ -152,15 +152,10 @@ html, body{
 	
 	.gallery{
 		text-align: center;
-		.divider{
-			width: 100%;
-		}
-		.split{
-			height: 350px;
-		}
 		img{
 			float:left;
 			display: inline-block;
+			height: 350px;
 			border: 0px;
 			margin: 0px;
 			padding: 2px;
