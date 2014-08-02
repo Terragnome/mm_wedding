@@ -11,5 +11,6 @@ class ApplicationController < ActionController::Base
     @email='wedding@melanieandmichael.us'
     @crate_registry_url='http://www.crateandbarrel.com/Gift-Registry/Michael-Lin-and-Melanie-So/r5198518'
     @amazon_registry_url='http://www.amazon.com/registry/wedding/Z9LEWSYZSJND'
+    @honeyfund_url = 'http://www.honeyfund.com/wedding/melanieandmichael'
   end
 end
