@@ -12,4 +12,24 @@ class Rsvp < ActiveRecord::Base
   validates_presence_of :entree
 
   validates_inclusion_of :shuttle, :in => [true, false]
+  
+  def self.shuttles
+    Rsvp.where(shuttle:true)
+  end
+
+  def self.entrees
+    results = {}
+    Rsvp.each do |a|
+      if(results[a.entree] != null)
+        results[a.entree] = [a]
+      else
+        results[a.entree].push(a)
+      end
+    end
+    results
+  end
+
+  def to_s
+    "#{a.name} | #{a.email} | #{a.entree} | #{a.shuttle}"
+  end
 end
