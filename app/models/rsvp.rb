@@ -20,7 +20,7 @@ class Rsvp < ActiveRecord::Base
   def self.entrees
     results = {}
     Rsvp.all.each do |a|
-      if(results[a.entree] != null)
+      if(results[a.entree] != nil)
         results[a.entree] = [a]
       else
         results[a.entree].push(a)
