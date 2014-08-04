@@ -3,7 +3,11 @@
     %h1
       RSVP
     %p
-      ="Please submit your RSVP information using the form below"
+      ="Please submit your RSVP information using the form below.  You must fill out a separate form for each guest who will be attending."
+      %br
+      %br
+      %span.purple
+        ="Please do not put multiple people on the same form or we will not be able to record your dinner choice."
     %p.errors
       -@rsvp.errors.full_messages.each do |message|
         ="-#{message}"
