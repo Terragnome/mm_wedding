@@ -45,6 +45,13 @@
               ="Risotto with mushrooms, tomatoes, spinach, garlic and parmesan cheese"
             .checkbox
               =f.radio_button :entree, "vegetarian"
+          .clearfix.choice{:class=>"unselected", :style=>"width:742px; height:60px"}
+            .title
+              ="CHILDREN'S MEAL"
+            .description
+              ="Chicken tenders and french fries"
+            .checkbox
+              =f.radio_button :entree, "children"
       .shuttle.area.clearfix
         =f.label :shuttle, "SHUTTLE"
         %p
