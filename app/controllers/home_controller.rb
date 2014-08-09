@@ -13,8 +13,14 @@ class HomeController < ApplicationController
   end
   
   def rsvp_submit
-    @rsvp = Rsvp.find_by_email(rsvp_params[:email])
-    @rsvp = Rsvp.new(rsvp_params) if !@rsvp
+    @rsvp = Rsvp.find_by_name(rsvp_params[:name])
+
+    if !@rsvp
+      @rsvp = Rsvp.new(rsvp_params)
+    else
+      @rsvp.update_attributes(rsvp_params)
+    end
+
     if @rsvp.save
       render :rsvp_submit
     else

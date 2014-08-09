@@ -30,6 +30,6 @@ class Rsvp < ActiveRecord::Base
   end
 
   def to_s
-    "#{a.name} | #{a.email} | #{a.entree} | #{a.shuttle}"
+    "#{id} | #{name} | #{email} | #{entree} | #{shuttle}"
   end
 end
