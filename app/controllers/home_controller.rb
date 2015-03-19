@@ -14,6 +14,9 @@ class HomeController < ApplicationController
     @outtake_images = Photo.where(category: :outtake)
   end
 
+  def registry
+  end
+
   def contact
   end
 

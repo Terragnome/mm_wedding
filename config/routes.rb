@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   get 'home' => 'home#home'
   get 'about' => 'home#about'
   get 'photos' => 'home#photos'
+  get 'registry' => 'home#registry'
   get 'contact' => 'home#contact'
 
   # The priority is based upon order of creation: first created -> highest priority.
