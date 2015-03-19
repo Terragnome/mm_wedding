@@ -1,7 +1,7 @@
 class Photo < ActiveRecord::Base
   has_attached_file :file,
     styles: {
-      thumbnail: "150x150"
+      thumbnail: "128x128"
     }
 
   validates_attachment :file, :presence => true, :size => { :in => 0..20.megabytes }
