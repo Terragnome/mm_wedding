@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(version: 20150319184555) do
   create_table "photos", force: true do |t|
     t.string   "title"
     t.string   "description"
+    t.string   "category"
     t.string   "file_file_name"
     t.string   "file_content_type"
     t.integer  "file_file_size"
@@ -26,6 +27,9 @@ ActiveRecord::Schema.define(version: 20150319184555) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  add_index "photos", ["category"], name: "index_photos_on_category", using: :btree
+  add_index "photos", ["file_file_name"], name: "index_photos_on_file_file_name", using: :btree
 
   create_table "rsvps", force: true do |t|
     t.string  "name",    null: false
