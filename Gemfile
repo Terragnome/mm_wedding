@@ -2,8 +2,6 @@ source 'https://rubygems.org'
 
 ruby '2.0.0'
 
-gem 'rails_12factor'
-
 gem 'newrelic_rpm'
 
 gem 'haml'
